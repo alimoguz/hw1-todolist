@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="oguuz.alim.todo_list.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:background="@drawable/arka_fon"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="28dp">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:paddingLeft="15dp"></ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/task"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5"
+                android:backgroundTint="@color/colorAccent"
+                android:paddingLeft="10dp"
+                android:hint="Please Enter Task to Add..."
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/background_light" />
+
+            <ImageButton
+                android:id="@+id/add_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/addd" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout >
